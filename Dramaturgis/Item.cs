@@ -8,5 +8,8 @@ namespace Dramaturgis
 {
     class Item
     {
+        public String name { get; set; }
+        public int price { get; set; }
+
     }
 }

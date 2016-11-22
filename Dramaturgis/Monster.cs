@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dramaturgis 
 {
-    abstract class Monster : ITakeDamage
+    class Monster : ITakeDamage
     {
         public string monsterName { get; set; }
         public double healthPoints { get; set; }

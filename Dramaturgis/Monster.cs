@@ -9,7 +9,7 @@ namespace Dramaturgis
     abstract class Monster : ITakeDamage
     {
         public string monsterName { get; set; }
-        public float healthPoints { get; set; }
+        public double healthPoints { get; set; }
         public int manaPoints { get; set; }
         public int attackDamageValue { get; set; }
         public int defenseValue { get; set; }

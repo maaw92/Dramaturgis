@@ -29,9 +29,7 @@ namespace Dramaturgis
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Editor editor = new Editor();
-            editor.Show();
+           
             
 
         }
@@ -39,6 +37,13 @@ namespace Dramaturgis
         private void optionsButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void editorButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Editor editor = new Editor();
+            editor.Show();
         }
     }
 }

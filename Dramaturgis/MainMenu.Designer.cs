@@ -76,6 +76,7 @@
             this.editorButton.TabIndex = 3;
             this.editorButton.Text = "EDITOR";
             this.editorButton.UseVisualStyleBackColor = true;
+            this.editorButton.Click += new System.EventHandler(this.editorButton_Click);
             // 
             // MainMenu
             // 

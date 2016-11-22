@@ -9,18 +9,21 @@ namespace Dramaturgis
     abstract class Monster : ITakeDamage
     {
         public string monsterName { get; set; }
-        public int healthPoints { get; set; }
+        public float healthPoints { get; set; }
         public int manaPoints { get; set; }
         public int attackDamageValue { get; set; }
         public int defenseValue { get; set; }
 
-        void attack()
+        void attack(ITakeDamage player)
         {
-
+            Random random = new Random();
+            int totalDamage = random.Next(0, this.attackDamageValue);
+            player.takeDamageFromEnemy(totalDamage);
+            
         }
         void ITakeDamage.takeDamageFromEnemy(int damageTaken)
         {
-
+            this.healthPoints -= damageTaken * 0.1 * defenseValue; 
         }
     }
 }

@@ -18,7 +18,7 @@ namespace Dramaturgis
         {
 
         }
-        void ITakeDamage.takeDamageFromEnemy()
+        void ITakeDamage.takeDamageFromEnemy(int damageTaken)
         {
 
         }

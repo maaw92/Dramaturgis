@@ -8,6 +8,6 @@ namespace Dramaturgis
 {
     public interface ITakeDamage
     {
-        void takeDamageFromEnemy();        
+        void takeDamageFromEnemy(int damageTaken);        
     }
 }

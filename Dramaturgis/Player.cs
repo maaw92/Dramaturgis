@@ -17,11 +17,12 @@ namespace Dramaturgis
         public Equip equipment { get; set; }        
         
 
-        void dealDamageToEnemy()                       
+        void dealDamageToEnemy(ITakeDamage enemy)                       
         {
-
+            int totalDamage = attackValue + 5;
+            enemy.takeDamageFromEnemy(totalDamage);
         }
-        void ITakeDamage.takeDamageFromEnemy()          
+        void ITakeDamage.takeDamageFromEnemy(int damageTaken)          
         {
 
         }

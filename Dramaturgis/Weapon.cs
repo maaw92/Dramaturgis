@@ -8,6 +8,6 @@ namespace Dramaturgis
 {
     class Weapon:Item
     {
-        int attack;
+        public int attack { get; set; }
     }
 }

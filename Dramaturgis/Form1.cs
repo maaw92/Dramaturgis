@@ -16,5 +16,11 @@ namespace Dramaturgis
         {
             InitializeComponent();
         }
+
+        private void createMonsterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Monster monster = new Monster();
+            GameController.monsterList.Add(monster);
+        }
     }
 }

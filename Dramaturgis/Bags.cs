@@ -8,6 +8,6 @@ namespace Dramaturgis
 {
     class Bags
     {
-        int space;
+        public int space { get; set; }
     }
 }

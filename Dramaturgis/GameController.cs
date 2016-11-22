@@ -8,6 +8,6 @@ namespace Dramaturgis
 {
     static class GameController
     {
-        static public List<Monster> monsterList;
+        static public List<Monster> monsterList = new List<Monster>();
     }
 }

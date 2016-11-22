@@ -30,8 +30,8 @@ namespace Dramaturgis
         private void startButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form form1 = new Form();
-            form1.Show();
+            Editor editor = new Editor();
+            editor.Show();
             
 
         }

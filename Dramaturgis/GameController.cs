@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Dramaturgis
 {
-    interface Interface1
+    static class GameController
     {
+        static public List<Monster> monsterList;
     }
 }

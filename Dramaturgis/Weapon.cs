@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Dramaturgis
 {
-    class Weapon
+    class Weapon:Item
     {
+        int attack;
     }
 }

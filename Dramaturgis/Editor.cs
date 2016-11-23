@@ -33,9 +33,6 @@ namespace Dramaturgis
             radioButtonMonster.Parent = flowLayoutPanel1;
             radioButtonMonster.Text = "";
             radioButtonMonster.Show();
-            Random rand = new Random();
-            
-            test++;
             GameController.MonstersAndTheirVisualisationPairs.Add(radioButtonMonster,monster);
             
              
@@ -64,7 +61,7 @@ namespace Dramaturgis
             if (buttons != null)
             {
                 GameController.MonstersAndTheirVisualisationPairs[buttons].healthPoints -= 30;
-          //      buttons.Text = GameController.MonstersAndTheirVisualisationPairs[buttons].healthPoints.ToString();
+                buttons.Text = GameController.MonstersAndTheirVisualisationPairs[buttons].healthPoints.ToString();
             }
 
 

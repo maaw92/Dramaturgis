@@ -8,5 +8,9 @@ namespace Dramaturgis
 {
     class Troll:Monster
     {
+        public Troll()
+        {
+            healthPoints = 100;
+        }
     }
 }

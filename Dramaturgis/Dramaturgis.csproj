@@ -48,13 +48,17 @@
   <ItemGroup>
     <Compile Include="Armor.cs" />
     <Compile Include="Bags.cs" />
+<<<<<<< HEAD
     <Compile Include="Equip.cs" />
+=======
+>>>>>>> 138a8f73c5fb223949d055f035f21aa444fcf21f
     <Compile Include="Editor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Editor.Designer.cs">
       <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Equip.cs" />
     <Compile Include="GameController.cs" />
     <Compile Include="ITakeDamage.cs" />
     <Compile Include="Item.cs" />
@@ -69,7 +73,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spell.cs" />
+    <Compile Include="Troll.cs" />
     <Compile Include="Weapon.cs" />
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>

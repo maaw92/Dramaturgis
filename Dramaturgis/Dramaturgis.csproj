@@ -48,10 +48,6 @@
   <ItemGroup>
     <Compile Include="Armor.cs" />
     <Compile Include="Bags.cs" />
-
-    <Compile Include="Equip.cs" />
-
-
     <Compile Include="Editor.cs">
       <SubType>Form</SubType>
     </Compile>

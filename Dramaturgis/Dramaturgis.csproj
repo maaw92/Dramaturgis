@@ -48,10 +48,10 @@
   <ItemGroup>
     <Compile Include="Armor.cs" />
     <Compile Include="Bags.cs" />
-<<<<<<< HEAD
+
     <Compile Include="Equip.cs" />
-=======
->>>>>>> 138a8f73c5fb223949d055f035f21aa444fcf21f
+
+
     <Compile Include="Editor.cs">
       <SubType>Form</SubType>
     </Compile>

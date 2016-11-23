@@ -29,8 +29,12 @@ namespace Dramaturgis
 
         private void startButton_Click(object sender, EventArgs e)
         {
-           
-            
+
+            this.Hide();
+            GameWindow GameWindow = new GameWindow();
+            GameWindow.FormBorderStyle = FormBorderStyle.None;
+            GameWindow.WindowState = FormWindowState.Maximized;
+            GameWindow.Show();
 
         }
 

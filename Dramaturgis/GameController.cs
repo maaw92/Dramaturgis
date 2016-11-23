@@ -11,5 +11,6 @@ namespace Dramaturgis
     {
         static public List<Monster> monsterList = new List<Monster>();
         static public Dictionary<RadioButton, Monster> MonstersAndTheirVisualisationPairs = new Dictionary<RadioButton, Monster>();
+        static public Player player = new Player("Maciek");
     }
 }

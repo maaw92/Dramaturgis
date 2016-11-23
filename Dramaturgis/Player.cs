@@ -9,7 +9,7 @@ namespace Dramaturgis
     class Player : ITakeDamage
     {
         public string playerName { get; set; }
-        public double healthPoints { get; set; }             
+        public int healthPoints { get; set; }             
         public int manaPoints { get; set; }           
         public int attackValue { get; set; }
         public int defenseValue { get; set; }
@@ -17,16 +17,18 @@ namespace Dramaturgis
         public Equip equipment { get; set; }        
         
 
-        void dealDamageToEnemy(ITakeDamage enemy)                       
+        public void dealDamageToEnemy(ITakeDamage enemy)                       
         {
             int totalDamage = this.attackValue + 5;
             enemy.takeDamageFromEnemy(totalDamage);
         }
         void ITakeDamage.takeDamageFromEnemy(int damageTaken)          
         {
-            this.healthPoints -= damageTaken * 0.1 * defenseValue;
+            this.healthPoints -= damageTaken * defenseValue;
+
+
         }
-        Player (string playerName)
+        public Player (string playerName)
         {
             healthPoints = 100;
             manaPoints = 100;

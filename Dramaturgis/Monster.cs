@@ -9,7 +9,7 @@ namespace Dramaturgis
     class Monster : ITakeDamage
     {
         public string monsterName { get; set; }
-        public double healthPoints { get; set; }
+        public int healthPoints { get; set; }
         public int manaPoints { get; set; }
         public int attackDamageValue { get; set; }
         public int defenseValue { get; set; }
@@ -23,7 +23,8 @@ namespace Dramaturgis
         }
         void ITakeDamage.takeDamageFromEnemy(int damageTaken)
         {
-            this.healthPoints -= damageTaken * 0.1 * defenseValue; 
+            this.healthPoints -= damageTaken;
+
         }
     }
 }

@@ -23,7 +23,6 @@ namespace Dramaturgis
         {
            
         }
-        static int test = 1;
         private void addTrollToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             
@@ -60,7 +59,7 @@ namespace Dramaturgis
                            .FirstOrDefault(n => n.Checked);
             if (buttons != null)
             {
-                GameController.MonstersAndTheirVisualisationPairs[buttons].healthPoints -= 30;
+                GameController.player.dealDamageToEnemy(GameController.MonstersAndTheirVisualisationPairs[buttons]);
                 buttons.Text = GameController.MonstersAndTheirVisualisationPairs[buttons].healthPoints.ToString();
             }
 

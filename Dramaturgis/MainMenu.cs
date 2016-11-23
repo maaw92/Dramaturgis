@@ -45,7 +45,7 @@ namespace Dramaturgis
 
         private void editorButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
+           // this.Hide();
             Editor editor = new Editor();
             editor.Show();
         }

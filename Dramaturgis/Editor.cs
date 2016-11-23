@@ -12,6 +12,8 @@ namespace Dramaturgis
 {
     public partial class Editor : Form
     {
+        
+        
         public Editor()
         {
             InitializeComponent();
@@ -21,25 +23,52 @@ namespace Dramaturgis
         {
            
         }
-
+        static int test = 1;
         private void addTrollToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
+            
             Troll monster = new Troll();
             GameController.monsterList.Add(monster);
-            richTextMonsters.Text = "";
-            Label radioButtonMonster = new Label();
-            radioButtonMonster.Parent = this;
-            radioButtonMonster.Location = new Point(1000, 1000);
-            radioButtonMonster.Width = 100;
-            radioButtonMonster.Height = 100;
+            RadioButton radioButtonMonster = new RadioButton();
+            radioButtonMonster.Parent = flowLayoutPanel1;
+            radioButtonMonster.Text = "";
             radioButtonMonster.Show();
-        //    radioButtonMonster.Text = m.GetType().ToString() + " " + m.healthPoints.ToString() + '\n';
+            Random rand = new Random();
+            
+            test++;
+            GameController.MonstersAndTheirVisualisationPairs.Add(radioButtonMonster,monster);
+            
+             
+            
+            
             foreach (Monster m in GameController.monsterList)
              {
-                richTextMonsters.Text += m.GetType().ToString()+" "+m.healthPoints.ToString()+'\n';
+                RadioButton myKey = GameController.MonstersAndTheirVisualisationPairs.FirstOrDefault(x => x.Value == m).Key;
+                myKey.Text =m.healthPoints.ToString();
+             
                
             }
             
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            
+              Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+             var  buttons = flowLayoutPanel1.Controls.OfType<RadioButton>()
+                           .FirstOrDefault(n => n.Checked);
+            if (buttons != null)
+            {
+                GameController.MonstersAndTheirVisualisationPairs[buttons].healthPoints -= 30;
+          //      buttons.Text = GameController.MonstersAndTheirVisualisationPairs[buttons].healthPoints.ToString();
+            }
+
+
+
         }
     }
 }
